@@ -17,17 +17,17 @@
                     
 <div class="signup-main">
     <form action="/" method="POST" class="signup-form">
-    {{ csrf_field() }}
-    <div class="form-content">
-    <button type="submit">Bevestig</button>
-    </div>
+        {{ csrf_field() }}
+        <div class="form-content">
+            <button type="submit">Bevestig</button>
+        </div>
     </form>
     <form action="/" method="POST" class="signup-form">
         {{ csrf_field() }}
         <div class="form-content">
-        <button type="submit">Meld af</button>
+            <button type="submit">Meld af</button>
         </div>
-        </form>
+    </form>
         
                 </div>
             </div>
