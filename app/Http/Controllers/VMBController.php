@@ -28,4 +28,13 @@ class VMBController extends Controller
 
         return redirect('/');
     }
+
+    public function delete() {
+
+        $vrijmibo = Vrijmibo::where('naam', auth()->user()->name);
+
+        $vrijmibo->delete();
+
+        return redirect('/');
+    }
 }

@@ -19,3 +19,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'VMBController@home');
 Route::get('/create', 'VMBController@create');
 Route::post('/', 'VMBController@store');
+Route::post('/delete', 'VMBController@delete');

@@ -22,7 +22,7 @@
             <button type="submit">Bevestig</button>
         </div>
     </form>
-    <form action="/" method="POST" class="signup-form">
+    <form action="/delete" method="POST" class="signup-form">
         {{ csrf_field() }}
         <div class="form-content">
             <button type="submit">Meld af</button>
