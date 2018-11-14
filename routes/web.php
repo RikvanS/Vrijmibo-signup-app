@@ -20,3 +20,7 @@ Route::get('/', 'VMBController@home');
 Route::get('/create', 'VMBController@create');
 Route::post('/', 'VMBController@store');
 Route::post('/delete', 'VMBController@delete');
+
+Route::get('/admin', 'AdminController@admin')    
+    ->middleware('is_admin')    
+    ->name('admin');
