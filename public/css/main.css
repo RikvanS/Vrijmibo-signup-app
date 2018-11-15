@@ -75,7 +75,18 @@ a {
 
 .signup-list {
     text-align: center;
-    padding-top: 20%;
-    margin: 0 auto;
+    padding-top: 10%;
     color: white;
+}
+
+.bullet-list {
+    margin-top:20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.bullet-list > ul {
+    list-style-type: none;
 }
