@@ -90,3 +90,11 @@ a {
 .bullet-list > ul {
     list-style-type: none;
 }
+
+.signup-form {
+    text-align: center;
+}
+
+.card-header {
+    text-align: center;
+}
