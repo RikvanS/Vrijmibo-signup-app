@@ -54,3 +54,8 @@ In een echte live setting zou natuurlijk nooit een migrate fresh op een producti
 Readme aangemaakt, tot op heden is dit blijven liggen.
 De huidige versie inclusief admin pagina staat live op heroku. Vanaf dit punt ga ik kijken naar nuttige toevoegingen en werken aan het opschonen van de code en styling.
 Mogelijk interessante toevoeging is een pagina waarop gebruikers hun vrijmibo foto's kunnen uploaden, met dank aan Mike voor het idee.
+
+16:40:
+
+Styling opgeschoond, aantal kleine fixes en tweaks om de pagina mooier te maken. Tekst meer uniform gemaakt (Paar verloren engelse termen vervangen door nederlands.), admin pagina link toegevoegd enkel benaderbaar als user admin is.
+Registratie redirect verbeterd, user wordt na registratie nu correct doorverwezen naar main page in plaats van gelijk naar signup.
