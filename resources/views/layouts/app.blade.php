@@ -48,8 +48,13 @@
                                 @endif
                             </li>
                         @else
+                        @if(Auth::user()->isAdmin())
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">Signup for drinks</a>
+                            <a class="nav-link" href="{{ route('admin') }}">Admin</a>
+                        </li>
+                        @endif
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('home') }}">Vrijmibo Aanmeldingen</a>
                         </li>
                             
                             <li class="nav-item dropdown">

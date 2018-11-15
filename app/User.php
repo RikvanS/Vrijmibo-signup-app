@@ -33,4 +33,9 @@ class User extends Authenticatable
     public function isAdmin()    {        
     return $this->type === self::ADMIN_TYPE;    
     }
+
+        public function hasRole($role)
+    {
+        return $this->role == $role;
+    }
 }
