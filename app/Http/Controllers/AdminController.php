@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Vrijmibo;
 
 class AdminController extends Controller
 {
@@ -12,6 +13,16 @@ class AdminController extends Controller
     }
     public function admin()
     {
-        return view('admin');
+
+        $deelnemers = Vrijmibo::all();
+        return view('admin', compact('deelnemers'));
+        
+    }
+
+    public function admindelete($id)
+    {
+        
+        $deelnemer = Vrijmibo::findOrFail($id)->delete();
+        return redirect('admin');
     }
 }
