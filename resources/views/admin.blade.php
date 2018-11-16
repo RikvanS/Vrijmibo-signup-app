@@ -10,3 +10,6 @@ Als je dit ziet zit je in admin
         </form> </ul>
 @endforeach
 
+@foreach ($users as $user)
+    </li> {{$user}} </li><br>
+@endforeach
