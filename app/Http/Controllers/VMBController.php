@@ -21,7 +21,7 @@ class VMBController extends Controller
 
     public function store() {
 
-        $vrijmibo = vrijmibo::firstOrCreate(['naam' => auth()->user()->name]);
+        $vrijmibo = Vrijmibo::firstOrCreate(['naam' => auth()->user()->name]);
 
 
         $vrijmibo->save();
